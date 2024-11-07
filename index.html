@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Princess's Personal Site</title>
     <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src = "Images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars " onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
@@ -38,7 +40,7 @@
                     <h1 class="sub-title">About me</h1>
                     <p>I graduated with a Diploma in Financial Information Systems and I am looking to develop my skills further in the workplace.
                        I'm currently a student at Wethinkcode_, a tech school where we dive deeper into Python(fundamentals of python),
-                       Java(Object Oriented Programming), Brown fields Development and Web Development(Web Applications).
+                       Java(Object Oriented Programming), Brown fields Development, Web Development(Web Applications) and Data Engineering.
                        I enjoy working with software and creating systems that are user friendly and solve a problem.
                        I have solid knowledge in Python, Java, Web development, Systems Development Life Cycle, Data Analysis,
                        Uml diagram, Data Management Systems. I believe in continuous development, and I am intrigued by providing solutions as my contribution to a team.</p>
@@ -47,6 +49,7 @@
                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
                        <p class ="tab-links" onclick="opentab('education')">Education</p>
+                       <p class ="tab-links" onclick="opentab('achievements')">Achievements</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -63,9 +66,6 @@
                         <ul>
                            <li><span>Aurum Innova  03 July 2023 - 30 September 2023</span> <br>Finance Intern: I have learnt on-the-job skills in prossessing purchase orders, creditors reconciliation,
                                      providing quotations, making payments and processing bank confimation letters from vendor</li>
-                           <li><span>Mukuru & Wethinkcode_ Hackathon  22 August 2024 - 23 August 2024</span> <br> Front-End Developer & UI/UX Design
-                                     Collaborated in a team to build a User friendly Pay-in and Pay-out Location Finder in a fast-paced, high-pressure environment.
-                                     Played a key role in integration APIs and designing the user interface, contributing to the team's success as 1st runnner-up</li>
                            
                         </ul>  
                     </div>
@@ -74,7 +74,15 @@
                         <ul>
                            <li><span>Providence Acamedy</span> <br>High school</li>
                            <li><span>Tshwane University of Technology</span> <br>Diploma in Financial Information Systems</li>
-                           <li><span>Wethinkcode_</span> <br> Certificate in Software Development</li>
+                           <li><span>Wethinkcode_</span> <br> Certificate in Systems Intergration</li>
+                        </ul>  
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                           <li><span>Mukuru & Wethinkcode_ Hackathon  22 August 2024 - 23 August 2024</span> <br> Front-End Developer & UI/UX Design
+                                     Collaborated in a team to build a User friendly Pay-in and Pay-out Location Finder in a fast-paced, high-pressure environment.
+                                     Played a key role in integration APIs and designing the user interface, contributing to the team's success as 1st runnner-up</li>
+                           
                         </ul>  
                     </div>
                 </div>
@@ -88,23 +96,59 @@
             <div class="project-list">
                 <div class="projects">
                     <img src="Images/agricultural.jpg" alt="Agriculture">
+                    <div class="layer">
+                        <h3>AgrWeather Advisor</h3>
+                        <p>AgrWeather Advisor provides real-time weather updates and tailored agriculture advice based on current weather conditions in your city.</p>
+                        <a href="https://github.com/Princesskanye001/AgrWeather-Advisor" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
                 </div>
     
                 <div class="projects">
                     <img src="Images/clothing.jpg" alt="Shopping ui">
+                    <div class="layer">
+                        <h3>Secret Software </h3>
+                        <p>A Front-End functional e-commerce website using React. Implemented features such as product listing, shopping cart.</p>
+                        <a href="https://github.com/Princesskanye001/Secret-Softwear" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
     
                 <div class="projects">
                     <img src="Images/codeh.jpg" alt="Coding">
+                    <div class="layer">
+                        <h3>Mukuru & Wethinkcode_ Hackathon</h3>
+                        <p>A website that addresses a Pay-in and Pay-out Loction Finder.Led API integration and implemented a responsive, user-friendly design.Focused on ensuring seamless error handling and optimized perfomance across</p>
+                        <a href="https://github.com/Princesskanye001/Byte-Bankers" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
 
             </div>
-            
-
-
+            <a href="#"class="btn">See more</a>
         </div>
-
      </div>
+     <!-------------------------------contact-------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><a href=""><i class="fa-solid fa-paper-plane"></i></a> Princesskanye001@gmail.com</p>
+                    <p><a href=""><i class="fa-solid fa-phone"></i></a> +27822890047</p>
+                    <div class="social-icons">
+                        <p><a href="https://www.linkedin.com/in/princess-hlazo-643b13229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"> <i class="fa-brands fa-linkedin"></i></a> Linkedin</p>
+
+                    </div>
+                    <a href="Images/Princess Hlazo cv.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+            </div>     
+        </div>
+     </div>
+     <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Princess Hlazo</p>
+     </div>
+
+
 
 
     <script>
@@ -123,6 +167,17 @@
 
         }
         
+    </script>
+
+    <script>
+        var menu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            menu.style.right = "0";
+        }
+        function closemenu(){
+            menu.style.right = "-200px";
+        }
     </script>
 
     
