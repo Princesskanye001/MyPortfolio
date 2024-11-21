@@ -277,84 +277,89 @@ nav ul li a:hover::after{
 }
 
 /* -------------css for small screen-------------- */
-nav .fas{
+nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 600px){
-    #header{
+@media only screen and (max-width: 600px) {
+    #header {
         background-image: url(Images/Princess.JPG);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-    .header-text{
-        margin-top: 100%;
-        font-size:20px;
 
+    .header-text {
+        margin-top: 50vh;
+        font-size: 5vw;
+        color: white;    
     }
-    
-    #about{
-        font-size: 20px;
-        margin-right: 120px;
-        padding: 10px;
+    .header-text h1 span{
+        font-size: 8vw;
+    }
 
+    #about {
+        font-size: 4vw;         /* Scales font size based on width */
+        margin-right: 20vw;     /* Margin adapts to viewport width */
+        padding: 2vh;           /* Padding adapts to viewport height */
+        width: 90vw;            /* Makes the width more responsive */
     }
-    @media (max-width: 600px){
-        #about{
-            font-size: 25px;
-            margin-right: 80px;
-            padding: 8px;
-            width: 100%;
-        }
-    }    
-    nav .fas{
+
+    nav .fas {
         display: block;
-        font-size: 20px
+        font-size: 5vw;         /* Makes the icon size scalable */
     }
-    nav ul{
-        background:#ff004f;
+
+    nav ul {
+        background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        right: -50vw;           /* Adjusts the off-screen position */
+        width: 50vw;            /* Responsive sidebar width */
+        height: 100vh;          /* Full viewport height */
+        padding-top: 10vh;      /* Adjust padding with viewport height */
         z-index: 2;
         transition: right 0.5s;
-
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
-        margin: 25px;
+        margin: 4vh;            /* Spacing scales with viewport height */
     }
-    nav ul .fas{
+
+    nav ul .fas {
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 5vh;               /* Scales top positioning */
+        left: 5vw;              /* Scales left positioning */
         cursor: pointer;
+    }
 
+    .sub-title {
+        font-size: 8vw;         /* Scales text size with width */
     }
-    .sub-title{
-        font-size: 40px ;
-    }
-    .aboutCol1,  .aboutCol2{
+
+    .aboutCol1, .aboutCol2 {
         flex-basis: 100%;
     }
-    .aboutCol1{
-        margin-bottom: 30px;
+
+    .aboutCol1 {
+        margin-bottom: 5vh;     /* Adjust spacing with height */
     }
-    .aboutCol2{
-        font-size: 14px;
+
+    .aboutCol2 {
+        font-size: 3vw;         /* Scales font size with width */
     }
-    .tab-links{
-        font-size: 16px;
-        margin-right:20px;
+
+    .tab-links {
+        font-size: 3.5vw;       /* Adjusts tab link size */
+        margin-right: 5vw;      /* Scales with width */
     }
-    .contact-left, .contact-right{
+
+    .contact-left, .contact-right {
         flex-basis: 100%;
     }
-    .copyright{
-        font-size: 14px;
+
+    .copyright {
+        font-size: 3vw;         /* Scales font size with width */
     }
-
-    
-
 }
