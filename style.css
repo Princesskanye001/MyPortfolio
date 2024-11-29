@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/c.png);
+    background-image: url(Images/myprincess.png);
     background-size:750px;
     background-position: right 1% top 50px;
     background-repeat: no-repeat;
@@ -264,6 +264,11 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #ff004f;
 }
+.btn.btn3{
+    display: inline-block;
+    background: #ff004f;
+    margin-left: 20px;
+}
 .copyright{
     width: 100%;
     text-align: center;
@@ -283,7 +288,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(Images/Princess.JPG);
+        background-image: url(Images/myprincess.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -299,43 +304,43 @@ nav .fas {
     }
 
     #about {
-        font-size: 4vw;         /* Scales font size based on width */
-        margin-right: 20vw;     /* Margin adapts to viewport width */
-        padding: 2vh;           /* Padding adapts to viewport height */
-        width: 90vw;            /* Makes the width more responsive */
+        font-size: 4vw;         
+        margin-right: 20vw;     
+        padding: 2vh;          
+        width: 90vw;          
     }
 
     nav .fas {
         display: block;
-        font-size: 5vw;         /* Makes the icon size scalable */
+        font-size: 5vw;         
     }
 
     nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -50vw;           /* Adjusts the off-screen position */
-        width: 50vw;            /* Responsive sidebar width */
-        height: 100vh;          /* Full viewport height */
-        padding-top: 10vh;      /* Adjust padding with viewport height */
+        right: -50vw;         
+        width: 50vw;            
+        height: 100vh;          
+        padding-top: 10vh;      
         z-index: 2;
         transition: right 0.5s;
     }
 
     nav ul li {
         display: block;
-        margin: 4vh;            /* Spacing scales with viewport height */
+        margin: 4vh;            
     }
 
     nav ul .fas {
         position: absolute;
-        top: 5vh;               /* Scales top positioning */
-        left: 5vw;              /* Scales left positioning */
+        top: 5vh;               
+        left: 5vw;              
         cursor: pointer;
     }
 
     .sub-title {
-        font-size: 8vw;         /* Scales text size with width */
+        font-size: 8vw;         
     }
 
     .aboutCol1, .aboutCol2 {
@@ -343,16 +348,16 @@ nav .fas {
     }
 
     .aboutCol1 {
-        margin-bottom: 5vh;     /* Adjust spacing with height */
+        margin-bottom: 5vh;     
     }
 
     .aboutCol2 {
-        font-size: 3vw;         /* Scales font size with width */
+        font-size: 3vw;         
     }
 
     .tab-links {
-        font-size: 3.5vw;       /* Adjusts tab link size */
-        margin-right: 5vw;      /* Scales with width */
+        font-size: 3.5vw;       
+        margin-right: 5vw;     
     }
 
     .contact-left, .contact-right {
@@ -360,6 +365,6 @@ nav .fas {
     }
 
     .copyright {
-        font-size: 3vw;         /* Scales font size with width */
+        font-size: 3vw;         
     }
 }
